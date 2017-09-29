@@ -1,0 +1,26 @@
+diff --git a/Makefile.install b/Makefile.install
+index 24fe8c82..e962f68e 100644
+--- a/Makefile.install
++++ b/Makefile.install
+@@ -5,6 +5,10 @@ include ./Makefile.system
+ 
+ PREFIX ?= /opt/OpenBLAS
+ 
++VIRTUAL_PREFIX = /usr
++OPENBLAS_VIRTUAL_INCLUDE_DIR := $(VIRTUAL_PREFIX)/include
++OPENBLAS_VIRTUAL_LIBRARY_DIR := $(VIRTUAL_PREFIX)/lib
++
+ OPENBLAS_INCLUDE_DIR := $(PREFIX)/include
+ OPENBLAS_LIBRARY_DIR := $(PREFIX)/lib
+ OPENBLAS_BINARY_DIR := $(PREFIX)/bin
+@@ -100,8 +104,8 @@ endif
+ 
+ #Generating openblas.pc
+ 	@echo Generating openblas.pc in $(DESTDIR)$(OPENBLAS_PKGCONFIG_DIR)
+-	@echo 'libdir='$(OPENBLAS_LIBRARY_DIR) >> $(DESTDIR)$(OPENBLAS_PKGCONFIG_DIR)/openblas.pc
+-	@echo 'includedir='$(OPENBLAS_INCLUDE_DIR) >> $(DESTDIR)$(OPENBLAS_PKGCONFIG_DIR)/openblas.pc
++	@echo 'libdir='$(OPENBLAS_VIRTUAL_LIBRARY_DIR) >> $(DESTDIR)$(OPENBLAS_PKGCONFIG_DIR)/openblas.pc
++	@echo 'includedir='$(OPENBLAS_VIRTUAL_INCLUDE_DIR) >> $(DESTDIR)$(OPENBLAS_PKGCONFIG_DIR)/openblas.pc
+ 	@echo 'version='$(VERSION) >> $(DESTDIR)$(OPENBLAS_PKGCONFIG_DIR)/openblas.pc
+ 	@echo 'extralib='$(EXTRALIB) >> $(DESTDIR)$(OPENBLAS_PKGCONFIG_DIR)/openblas.pc
+ 	@cat openblas.pc.in >> $(DESTDIR)$(OPENBLAS_PKGCONFIG_DIR)/openblas.pc
