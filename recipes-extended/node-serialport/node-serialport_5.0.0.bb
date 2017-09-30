@@ -15,10 +15,6 @@ S = "${WORKDIR}/${PN}-${PV}"
 
 inherit npm-install-global
 
-do_configure() {
-	:
-}
-
 INHIBIT_PACKAGE_DEBUG_SPLIT = "1"
 
 RDEPENDS_${PN} += " nodejs bash python"
