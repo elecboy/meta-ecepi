@@ -5,7 +5,7 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=e2bc0aa64d278eb2b6ddeb692e294945"
 
 SRC_URI = " \
-	https://github.com/EmergingTechnologyAdvisors/${PN}/archive/${PV}.tar.gz;name=pkg \
+	https://github.com/EmergingTechnologyAdvisors/${PN}/archive/v${PV}.tar.gz;name=pkg \
 "
 
 SRC_URI[pkg.md5sum] = "2e7c03b07f991eaf12de08ed7982ae0c"
