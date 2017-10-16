@@ -8,8 +8,8 @@ SRC_URI = " \
 	https://github.com/EmergingTechnologyAdvisors/${PN}/archive/${PV}.tar.gz;name=pkg \
 "
 
-SRC_URI[pkg.md5sum] = "b7b2b55587d1f25e26168fe5bd4830c0"
-SRC_URI[pkg.sha256sum] = "e09f8a6bac737ab7497ef1055ff976224355bd3c296f9ad9fa62bd35dea5592e"
+SRC_URI[pkg.md5sum] = "2e7c03b07f991eaf12de08ed7982ae0c"
+SRC_URI[pkg.sha256sum] = "ebb769249972995d1511101477404edc5c91abeafd1d5db06457b942a246aa47"
 
 S = "${WORKDIR}/${PN}-${PV}"
 
