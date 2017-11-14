@@ -10,7 +10,7 @@ DEPENDS = "avahi qtbase"
 PV = "1.1+git${SRCPV}"
 
 SRC_URI = "git://github.com/jbagg/QtZeroConf.git;protocol=https"
-SRCREV = "a8f3dac8b836ded09a1af691d7b1dacd0e74c474"
+SRCREV = "cc16de7b9aee1f5b72d565af585735f87cf58e65"
 
 S="${WORKDIR}/git"
 
