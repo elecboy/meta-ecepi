@@ -10,8 +10,8 @@ DEPENDS = "lapack libsuperlu"
 
 SRC_URI = "http://sourceforge.net/projects/arma/files/armadillo-${PV}.tar.xz \
           "
-SRC_URI[md5sum] = "ba298a232a5a37071b8e685c4bd3e383"
-SRC_URI[sha256sum] = "63845e36235f2bd78b4f6890fe5013b6ce51a4e92e3176b20bbc6631b340050a"
+SRC_URI[md5sum] = "ba50505d83e83cc9373cb3937d507a8c"
+SRC_URI[sha256sum] = "cd0f8e5e4dfa04855b32534c601646169ff4c0368a4ba071babe6f6ec461dc05"
 
 OLIBDIR = "lib"
 S = "${WORKDIR}/armadillo-${PV}"
