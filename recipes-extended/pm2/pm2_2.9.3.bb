@@ -5,8 +5,8 @@ LIC_FILES_CHKSUM = "file://GNU-AGPL-3.0.txt;md5=9f9fa01c099265d62f73735e404ff8bb
 
 SRC_URI = "https://github.com/Unitech/pm2/archive/${PV}.tar.gz;name=src"
 
-SRC_URI[src.md5sum] = "1a267be9b23ef7041d321bfd231e1023"
-SRC_URI[src.sha256sum] = "043bc548649b4e960d4dcb2ecd32a438a3b998325a0cd418da141affaeeb601e"
+SRC_URI[src.md5sum] = "44fe1f6f0494d3a3034880e69590a7c8"
+SRC_URI[src.sha256sum] = "ec24db2eb259fa32a1a129b1d80b8f6d1164634a0bd278373f88dbe8ee463ca8"
 
 RDEPENDS_${PN} = "nodejs"
 
