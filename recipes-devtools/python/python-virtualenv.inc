@@ -4,8 +4,7 @@ virtualenv is a tool to create isolated Python environments."
 HOMEPAGE = "https://pypi.python.org/pypi/virtualenv/"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"
-SRC_URI[md5sum] = "44e19f4134906fe2d75124427dc9b716"
-SRC_URI[sha256sum] = "02f8102c2436bb03b3ee6dede1919d1dac8a427541652e5ec95171ec8adbc93a"
+SRC_URI[md5sum] = "2132afa3012afb599b00bcc628b0c99f"
+SRC_URI[sha256sum] = "d257bb3773e48cac60e475a19b608996c73f4d333b3ba2e4e57d5ac6134e0136"
 
 PYPI_PACKAGE = "virtualenv"
-
