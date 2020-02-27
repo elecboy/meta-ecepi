@@ -23,7 +23,7 @@ BINMODE = "0755"
 
 do_install () {
     install -d ${D}${bindir}
-    install -d ${D}${bindir}
+    install -d ${D}${libdir}
 
     install -m${BINMODE} ${S}/proxychains4 ${D}${bindir}
     install -m${BINMODE} ${S}/libproxychains4.so ${D}${libdir}
