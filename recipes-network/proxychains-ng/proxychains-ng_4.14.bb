@@ -1,5 +1,6 @@
-DESCRIPTION = "ProxyChains is a UNIX program, redirects the connections through SOCKS4a/5 or HTTP proxies.
-  It supports TCP only (no UDP/ICMP etc)."
+DESCRIPTION = "ProxyChains is a UNIX program, \
+ redirects the connections through SOCKS4a/5 or HTTP proxies. \
+ It supports TCP only (no UDP/ICMP etc)."
 SECTION = "net"
 HOMEPAGE="https://github.com/rofl0r/proxychains-ng"
 LICENSE = "GPLv2"
