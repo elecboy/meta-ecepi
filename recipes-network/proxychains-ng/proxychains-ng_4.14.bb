@@ -10,8 +10,8 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=1fb9e0b45805be7065ad344c99f985bf"
 SRC_URI = "http://ftp.barfooze.de/pub/sabotage/tarballs/${PN}-${PV}.tar.xz \
            "
 
-SRC_URI[archive.md5sum] = "647709ff0cbeaec470df6d4f54003b99"
-SRC_URI[archive.sha256sum] = "9d00e035b8a808b9e0c750501b08f38eeadd0be421f30ee83e88fd15e872b0ae"
+SRC_URI[md5sum] = "647709ff0cbeaec470df6d4f54003b99"
+SRC_URI[sha256sum] = "9d00e035b8a808b9e0c750501b08f38eeadd0be421f30ee83e88fd15e872b0ae"
 
 inherit autotools
 
