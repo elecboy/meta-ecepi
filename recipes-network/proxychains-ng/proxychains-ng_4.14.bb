@@ -17,9 +17,9 @@ S = "${WORKDIR}/${PN}-${PV}"
 
 inherit autotools
 
-# do_configure () {
-#     ./configure --prefix=${prefix}
-# }
+do_configure () {
+    ./configure --prefix=${prefix}
+}
 
 BINMODE = "0755"
 
