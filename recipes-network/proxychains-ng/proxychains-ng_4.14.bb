@@ -26,6 +26,8 @@ do_install () {
 
     install -m${BINMODE} ${S}/proxychains4 ${D}${bindir}
     install -m${BINMODE} ${S}/libproxychains4.so ${D}${libdir}
+
+    install -m 0644 -D ${S}/src/proxychains.conf ${D}${sysconfdir}/proxychains.conf
 }
 
 PACKAGES = "${PN}"
