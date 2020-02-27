@@ -7,18 +7,16 @@ LICENSE = "GPLv2"
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=1fb9e0b45805be7065ad344c99f985bf"
 
-SRC_URI = "http://ftp.barfooze.de/pub/sabotage/tarballs/${PN}-${PV}.tar.xz \
+SRC_URI = "http://ftp.barfooze.de/pub/sabotage/tarballs/${BP}.tar.xz \
            "
 
 SRC_URI[md5sum] = "647709ff0cbeaec470df6d4f54003b99"
 SRC_URI[sha256sum] = "9d00e035b8a808b9e0c750501b08f38eeadd0be421f30ee83e88fd15e872b0ae"
 
-S = "${WORKDIR}/${PN}-${PV}"
-
-inherit autotools
+S = "${WORKDIR}/${BP}"
 
 do_configure () {
-    ./configure --prefix=${prefix}
+    ./configure
 }
 
 BINMODE = "0755"
@@ -34,6 +32,4 @@ do_install () {
 }
 
 PACKAGES = "${PN}"
-FILES_${PN} = "${bindir}/*"
-
-#RDEPENDS_${PN} = "readline"
+FILES_${PN} = "${bindir}/* ${libdir}/* ${sysconfdir}/*"
