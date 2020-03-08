@@ -8,8 +8,8 @@ HOMEPAGE = "https://github.com/supervisor/meld3"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=9e7581cef5645475fcefebdc15ed7abf"
 
-SRC_URI[md5sum] = "3ccc78cd79cffd63a751ad7684c02c91"
-SRC_URI[sha256sum] = "f7b754a0fde7a4429b2ebe49409db240b5699385a572501bb0d5627d299f9558"
+SRC_URI[md5sum] = "56fff5d6599efeefc81cf2d3b8cf6b4e"
+SRC_URI[sha256sum] = "1efda676264490db2e30bfb81b27a918cc6d9c2de6d609491aa43410b9537eb9"
 
 PYPI_PACKAGE = "meld3"
 inherit pypi
