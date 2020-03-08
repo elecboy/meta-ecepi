@@ -27,4 +27,6 @@ do_install_append() {
 
 	install -m 0644 ${WORKDIR}/supervisord.conf ${D}${sysconfdir}/supervisor
 	install -m 0644 ${WORKDIR}/supervisor.service ${D}${systemd_system_unitdir}
+	ln -sf /lib/systemd/system/supervisor.service ${D}${sysconfdir}/systemd/system/multi-user.target.wants/supervisor.service
+
 }
