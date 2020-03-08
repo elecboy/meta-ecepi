@@ -23,6 +23,7 @@ SYSTEMD_SERVICE_${PN} = "supervisor.service"
 
 do_install_append() {
 	install -d ${D}${sysconfdir}/supervisor
+	install -d ${D}${sysconfdir}/systemd/system/multi-user.target.wants
 	install -d ${D}${systemd_system_unitdir}
 
 	install -m 0644 ${WORKDIR}/supervisord.conf ${D}${sysconfdir}/supervisor
