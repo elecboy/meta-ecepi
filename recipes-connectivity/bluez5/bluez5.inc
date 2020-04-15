@@ -54,7 +54,6 @@ SRC_URI = "\
     ${@bb.utils.contains('DISTRO_FEATURES', 'systemd', '', 'file://0001-Allow-using-obexd-without-systemd-in-the-user-sessio.patch', d)} \
     file://0001-tests-add-a-target-for-building-tests-without-runnin.patch \
     file://0001-test-gatt-Fix-hung-issue.patch \
-    file://CVE-2018-10910.patch \
     file://gcc9-fixes.patch \
     file://0001-tools-Fix-build-after-y2038-changes-in-glibc.patch \
     file://CVE-2020-0556-1.patch \
