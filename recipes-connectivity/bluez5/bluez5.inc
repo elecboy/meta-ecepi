@@ -46,25 +46,24 @@ PACKAGECONFIG[mesh] = "--enable-mesh,--disable-mesh, json-c ell"
 PACKAGECONFIG[btpclient] = "--enable-btpclient,--disable-btpclient, ell"
 PACKAGECONFIG[udev] = "--enable-udev,--disable-udev,udev"
 
-SRC_URI = "\
-    ${KERNELORG_MIRROR}/linux/bluetooth/bluez-${PV}.tar.xz \
-    file://out-of-tree.patch \
-    file://init \
-    file://run-ptest \
-    ${@bb.utils.contains('DISTRO_FEATURES', 'systemd', '', 'file://0001-Allow-using-obexd-without-systemd-in-the-user-sessio.patch', d)} \
-    file://0001-tests-add-a-target-for-building-tests-without-runnin.patch \
-    file://0001-test-gatt-Fix-hung-issue.patch \
-"
+SRC_URI = "${KERNELORG_MIRROR}/linux/bluetooth/bluez-${PV}.tar.xz \
+           file://init \
+           file://run-ptest \
+           ${@bb.utils.contains('DISTRO_FEATURES', 'systemd', '', 'file://0001-Allow-using-obexd-without-systemd-in-the-user-sessio.patch', d)} \
+           file://0001-tests-add-a-target-for-building-tests-without-runnin.patch \
+           file://0001-test-gatt-Fix-hung-issue.patch \
+           "
 S = "${WORKDIR}/bluez-${PV}"
 
 CVE_PRODUCT = "bluez"
 
-inherit autotools pkgconfig systemd update-rc.d distro_features_check ptest gobject-introspection-data
+inherit autotools pkgconfig systemd update-rc.d features_check ptest gobject-introspection-data
 
 EXTRA_OECONF = "\
   --enable-test \
   --enable-datafiles \
   --enable-library \
+  --without-zsh-completion-dir \
 "
 
 # bluez5 builds a large number of useful utilities but does not
