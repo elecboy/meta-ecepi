@@ -1,4 +1,4 @@
-SUMMARY = "esptool is A command line utility to falsh ESP8266 & ESP32 "
+SUMMARY = "esptool is A command line utility to flash firmware for ESP8266 & ESP32 "
 DESCRIPTION = "\
 A command line utility to communicate with the ROM bootloader in Espressif ESP8266 & ESP32 microcontrollers.\
 Allows flashing firmware, reading back firmware, querying chip parameters, etc.\
