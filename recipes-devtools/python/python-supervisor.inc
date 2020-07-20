@@ -7,8 +7,8 @@ HOMEPAGE = "https://github.com/Supervisor/supervisor"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://LICENSES.txt;md5=5b4e3a2172bba4c47cded5885e7e507e"
 
-SRC_URI[md5sum] = "ecea94eedc70ba5127fdeb0665bcca0d"
-SRC_URI[sha256sum] = "2dc86fe0476e945e61483d614ceb2cf4f93b95282eb243bdf792621994360383"
+SRC_URI[md5sum] = "2c5cda085c03a27e1ba96a936779fffa"
+SRC_URI[sha256sum] = "64082ebedf6d36ff409ab2878f1aad5c9035f916c5f15a9a1ec7dffc6dfbbed8"
 
 PYPI_PACKAGE = "supervisor"
 inherit pypi systemd
