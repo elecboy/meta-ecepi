@@ -12,9 +12,6 @@ SRC_URI[sha256sum] = "64082ebedf6d36ff409ab2878f1aad5c9035f916c5f15a9a1ec7dffc6d
 
 PYPI_PACKAGE = "supervisor"
 inherit pypi systemd
-#RDEPENDS_${PN} = "\
-#    ${PYTHON_PN}-meld3 \
-#"
 
 SRC_URI += "file://supervisord.conf \
 	    file://supervisor.service \
