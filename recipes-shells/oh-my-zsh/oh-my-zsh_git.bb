@@ -13,13 +13,16 @@ DEPENDS = "zsh"
 
 PV = "1.0+git${SRCPV}"
 
-SRC_URI = "git://github.com/ohmyzsh/ohmyzsh.git;protocol=https"
+SRC_URI = "git://github.com/ohmyzsh/ohmyzsh.git;protocol=https\
+        file://zshrc \
+        "
 SRCREV = "079e7bb5e0a79171f3356d55d3f6302a82645a39"
 
 S="${WORKDIR}/git"
 
 do_install() {
-     install -d ${D}/${libdir}/oh-my-zsh
-     cp -av ${S}/* ${D}/${libdir}/oh-my-zsh
+    install -m 0644 -D ${WORKDIR}/zshrc ${D}${sysconfdir}/skel/.zshrc
+    install -d ${D}${libdir}/oh-my-zsh
+    cp -av ${S}/* ${D}${libdir}/oh-my-zsh
 }
 
