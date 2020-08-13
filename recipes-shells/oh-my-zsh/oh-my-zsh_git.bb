@@ -15,6 +15,7 @@ PV = "1.0+git${SRCPV}"
 
 SRC_URI = "git://github.com/ohmyzsh/ohmyzsh.git;protocol=https\
         file://zshrc \
+        file://zsh_history \
         "
 SRCREV = "079e7bb5e0a79171f3356d55d3f6302a82645a39"
 
