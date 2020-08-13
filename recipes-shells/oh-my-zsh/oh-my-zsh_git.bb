@@ -24,5 +24,6 @@ do_install() {
     install -m 0644 -D ${WORKDIR}/zshrc ${D}${sysconfdir}/skel/.zshrc
     install -d ${D}${libdir}/oh-my-zsh
     cp -av ${S}/* ${D}${libdir}/oh-my-zsh
+    chown root:root -R ${D}${libdir}/oh-my-zsh
 }
 
