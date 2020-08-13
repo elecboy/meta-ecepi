@@ -9,7 +9,7 @@ SECTION = "base/shell"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=a3d89f44b0b29ba4bd48cf7cf62bc9c3"
 
-DEPENDS = "zsh"
+RDEPENDS_${PN} = "zsh"
 
 PV = "1.0+git${SRCPV}"
 
