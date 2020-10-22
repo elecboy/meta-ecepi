@@ -7,5 +7,9 @@ SRC_URI += "file://0001-diskpart-force-kernel-to-reread-partition-table.patch \
 	    file://0001-diskpart-fix-adding-more-as-4-partitions.patch \
 	    "
 
+# returns all the elements from the src uri that are .cfg files
+def find_cfgs(d):
+    return [s for s in src_patches(d, True) if s.endswith('.cfg')]
+
 # Building out of tree is broken in this version
 B = "${S}"
