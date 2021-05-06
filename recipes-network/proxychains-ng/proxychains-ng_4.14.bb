@@ -31,5 +31,6 @@ do_install () {
     install -m 0644 -D ${S}/src/proxychains.conf ${D}${sysconfdir}/proxychains.conf
 }
 
-PACKAGES = "${PN}"
+PACKAGES = "${PN} ${PN}-dbg"
 FILES_${PN} = "${bindir}/* ${libdir}/* ${sysconfdir}/*"
+FILES_${PN}-dbg += "${bindir}/.debug ${libdir}/.debug"
