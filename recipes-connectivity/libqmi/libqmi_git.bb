@@ -7,14 +7,20 @@ LIC_FILES_CHKSUM = " \
     file://COPYING.LIB;md5=4fbd65380cdd255951079008b364516c \
 "
 
-DEPENDS = "glib-2.0 glib-2.0-native"
+DEPENDS = "glib-2.0 glib-2.0-native libgudev "
 
-inherit autotools pkgconfig bash-completion
+PV = "1.29+git${SRCPV}"
 
-SRC_URI = "http://www.freedesktop.org/software/${BPN}/${BPN}-${PV}.tar.xz \
-           "
+inherit autotools pkgconfig gobject-introspection
 
-SRC_URI[sha256sum] = "c793db2c91d7928160341b357b26315d9c879ecb36699cb7a6b36054cba60893"
+SRC_URI = "git://github.com/freedesktop/libqmi.git;protocol=https"
+SRCREV = "026158ab1a7d31811f4c254d3b0edd5c6f5e1adc"
+
+S = "${WORKDIR}/git"
+
+do_configure_prepend() {
+    (cd ${S};NOCONFIGURE=true ./autogen.sh;cd -)
+}
 
 PACKAGECONFIG ??= "udev mbim"
 PACKAGECONFIG[udev] = ",--without-udev,libgudev"
