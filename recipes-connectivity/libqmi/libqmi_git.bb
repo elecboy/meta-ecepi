@@ -7,11 +7,11 @@ LIC_FILES_CHKSUM = " \
     file://COPYING.LIB;md5=4fbd65380cdd255951079008b364516c \
 "
 
-DEPENDS = "glib-2.0 glib-2.0-native libgudev "
+DEPENDS = "glib-2.0 glib-2.0-native libgudev"
 
 PV = "1.29+git${SRCPV}"
 
-inherit autotools pkgconfig gobject-introspection
+inherit autotools pkgconfig gobject-introspection bash-completion
 
 SRC_URI = "git://github.com/freedesktop/libqmi.git;protocol=https"
 SRCREV = "026158ab1a7d31811f4c254d3b0edd5c6f5e1adc"
