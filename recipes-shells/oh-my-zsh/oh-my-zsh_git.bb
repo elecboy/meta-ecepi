@@ -7,7 +7,7 @@ HOMEPAGE = "https://ohmyz.sh/"
 SECTION = "base/shell"
 
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=a3d89f44b0b29ba4bd48cf7cf62bc9c3"
+LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=914c4ccc31c8e7a877fdd4db0b11d371"
 
 RDEPENDS_${PN} = "zsh"
 
@@ -17,7 +17,7 @@ SRC_URI = "git://github.com/ohmyzsh/ohmyzsh.git;protocol=https\
         file://zshrc \
         file://zsh_history \
         "
-SRCREV = "079e7bb5e0a79171f3356d55d3f6302a82645a39"
+SRCREV = "706b2f3765d41bee2853b17724888d1a3f6f00d9"
 
 S="${WORKDIR}/git"
 
