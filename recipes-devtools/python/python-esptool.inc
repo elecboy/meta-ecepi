@@ -12,4 +12,3 @@ SRC_URI[md5sum] = "d62d71041896d105d7abd9e9c40f1995"
 SRC_URI[sha256sum] = "ec6b943c53b4d71f87f98776333d5b4b99905766898a7002c28a9090b92b2de4"
 
 PYPI_PACKAGE = "esptool"
-inherit pypi
