@@ -17,7 +17,7 @@ SRC_URI = "git://github.com/ohmyzsh/ohmyzsh.git;protocol=https\
         file://zshrc \
         file://zsh_history \
         "
-SRCREV = "706b2f3765d41bee2853b17724888d1a3f6f00d9"
+SRCREV = "190325049ef93731ab28295dbedf36d44ab33d7a"
 
 S="${WORKDIR}/git"
 
