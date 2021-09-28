@@ -15,15 +15,13 @@ PV = "1.0+git${SRCPV}"
 
 SRC_URI = "git://github.com/ohmyzsh/ohmyzsh.git;protocol=https\
         file://zshrc \
-        file://zsh_history \
         "
-SRCREV = "190325049ef93731ab28295dbedf36d44ab33d7a"
+SRCREV = "93ad3a88214b95f571e03c21f7d9bd76f9110938"
 
 S="${WORKDIR}/git"
 
 do_install() {
     install -m 0644 -D ${WORKDIR}/zshrc ${D}${sysconfdir}/skel/.zshrc
-    install -m 0644 ${WORKDIR}/zsh_history ${D}${sysconfdir}/skel/.zsh_history
     install -d ${D}${libdir}/oh-my-zsh
     cp -av ${S}/* ${D}${libdir}/oh-my-zsh
     chown root:root -R ${D}${libdir}/oh-my-zsh
