@@ -14,7 +14,7 @@ SRCREV = "cc16de7b9aee1f5b72d565af585735f87cf58e65"
 
 S="${WORKDIR}/git"
 
-do_install_append() {
+do_install:append() {
      install -d ${D}/${includedir}/qt5
      install -m 0644 ${S}/qzeroconf.h ${D}/${includedir}/qt5
 }

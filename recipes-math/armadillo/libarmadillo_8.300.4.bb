@@ -20,7 +20,7 @@ S = "${WORKDIR}/armadillo-${PV}"
 #EXTRA_OECMAKE = "${EXTRA_OECONF} -DSOCI_LIBDIR=${libdir}"
 #DISABLE_STATIC = ""
 
-do_install_append() {
+do_install:append() {
     sed -i 's%^#define ARMA_SUPERLU_INCLUDE_DIR%//#define ARMA_SUPERLU_INCLUDE_DIR%' ${D}${includedir}/armadillo_bits/config.hpp
 }
 
