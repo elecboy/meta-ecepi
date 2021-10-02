@@ -32,5 +32,5 @@ do_install () {
 }
 
 PACKAGES = "${PN} ${PN}-dbg"
-FILES_${PN} = "${bindir}/* ${libdir}/* ${sysconfdir}/*"
-FILES_${PN}-dbg += "${bindir}/.debug ${libdir}/.debug"
+FILES:${PN} = "${bindir}/* ${libdir}/* ${sysconfdir}/*"
+FILES:${PN}-dbg += "${bindir}/.debug ${libdir}/.debug"

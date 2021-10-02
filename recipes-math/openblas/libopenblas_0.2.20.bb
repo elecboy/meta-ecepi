@@ -31,8 +31,8 @@ do_compile() {
 do_install() {
      oe_runmake install
 }
-INSANE_SKIP_${PN} = "dev-so"
-FILES_${PN} = "${libdir}/*.so"
+INSANE_SKIP:${PN} = "dev-so"
+FILES:${PN} = "${libdir}/*.so"
 # Make sure it isn’t in the dev package’s files list
 FILES_SOLIBSDEV = ""
-FILES_${PN}-dev = "${includedir} ${libdir}/cmake"
+FILES:${PN}-dev = "${includedir} ${libdir}/cmake"
