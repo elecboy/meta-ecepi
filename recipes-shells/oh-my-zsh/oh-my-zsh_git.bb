@@ -16,7 +16,7 @@ PV = "1.0+git${SRCPV}"
 SRC_URI = "git://github.com/ohmyzsh/ohmyzsh.git;protocol=https\
         file://zshrc \
         "
-SRCREV = "93ad3a88214b95f571e03c21f7d9bd76f9110938"
+SRCREV = "04c96e235ff522704a6f1482e7fd06a05467cbb7"
 
 S="${WORKDIR}/git"
 
