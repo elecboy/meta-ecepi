@@ -13,10 +13,10 @@ RDEPENDS:${PN} = "zsh"
 
 PV = "1.0+git${SRCPV}"
 
-SRC_URI = "git://github.com/ohmyzsh/ohmyzsh.git;protocol=https\
+SRC_URI = "git://github.com/ohmyzsh/ohmyzsh.git;protocol=https;branch=master \
         file://zshrc \
         "
-SRCREV = "54779e5250f362ebd1cf6a7094657f2c894958c3"
+SRCREV = "fe4b5659863c388786986d70fa6d1bb66b00afb6"
 
 S="${WORKDIR}/git"
 
