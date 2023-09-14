@@ -5,7 +5,7 @@ Allows flashing firmware, reading back firmware, querying chip parameters, etc.\
 The esptool.py project is hosted on github: https://github.com/espressif/esptool\
 "
 HOMEPAGE = "https://github.com/espressif/esptool"
-LICENSE = "BSD"
+LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
 SRC_URI[md5sum] = "17853949fd582550a7c270f08d7691d4"
